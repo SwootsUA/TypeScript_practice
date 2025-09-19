@@ -5,11 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TypeScript</title>
+  <link rel="stylesheet" href="./src/styles.css">
   <script src="./dist/index.js" defer></script>
 </head>
 
-<body>
-
+<body class="theme-dark">
+  <select name="bg-color" id="color-selector">
+    <option value="Light">Світлий</option>
+    <option value="Dark" selected>Темний</option>
+    <option value="Pink">Рожевий</option>
+  </select>
+  <form id="user-form">
+    <input type="text" placeholder="Name" id="user-name" required>
+    <input type="number" placeholder="Age" id="user-age" min="0" required>
+    <input type="text" placeholder="Your hobby" id="user-hobby" required>
+    <input type="number" placeholder="Years of expiriance" id="user-hobby-exp" min="0" required>
+    <button>Запустити скрипт</button>
+    <div id="script-result"></div>
+  </form>
+  <p>Доступні стилі:</p>
+  <ul id="selector-options"></ul>
 </body>
 
 </html>
